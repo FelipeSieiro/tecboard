@@ -1,0 +1,15 @@
+.select{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #4A4949;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.select:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px #17D9B1;
+}

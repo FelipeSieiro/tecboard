@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #06151A;
 }
 
 header{
@@ -9,22 +10,13 @@ header{
   justify-content: center;
 }
 
-section{
-  background-color: linear-gradient(180deg, #212121 0%, #121212 100%);
-  display:flex;
+.section{
+  background: linear-gradient(180deg, #17E4B9 0%, #091D24 100%);
+  display: flex;
   justify-content: center;
+  padding: 0px 398px ;
 }
 
-section img{
-  width:90%;
-}
-
-
-.form-evento{
-  background-color: #212121;
-  padding: 32px 28px;
-  border-radius: 16px;
-  width: 384px;
-  max-width: 90%;
-  margin: 64px auto;
+.section img{
+  width: 90%;
 }
