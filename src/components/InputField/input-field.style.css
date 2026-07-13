@@ -1,4 +1,4 @@
-.input{
+.input-field{
     background-color: transparent;
     border-radius: 8px;
     border: 1px solid #4A4949;
@@ -10,11 +10,11 @@
     color-scheme: dark;
 }
 
-.input:focus{
+.input-field:focus{
     outline: none;
     box-shadow: 0 0 0 1px #17D9B1;
 }
 
-.input::placeholder{
+.input-field::placeholder{
     color: #4A4949;
 }

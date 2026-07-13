@@ -1,8 +1,8 @@
-import './button.css'
+import './button.style.css'
 
 export function Button(props){
     return(
-        <button className='botao'>
+        <button className='button'>
             {props.children}
         </button>
     )
