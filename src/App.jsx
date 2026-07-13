@@ -1,10 +1,12 @@
 
 import './App.css'
+import { Banner } from './components/Banner'
 import { EventForm } from './components/EventForm'
+import { Header } from './components/Header'
 import { Theme } from './components/Theme'
 
 
-const themes=[
+const themes = [
   {
     id: '1',
     name: 'Front-end',
@@ -19,7 +21,7 @@ const themes=[
   },
   {
     id: '4',
-    name : 'Inteligencia Artificial',
+    name: 'Inteligencia Artificial',
   },
   {
     id: '5',
@@ -34,43 +36,21 @@ const themes=[
 function App() {
   return (
     <main>
-      <header>
-        <img 
-          src='/logo.png' 
-          alt='Logo do tecboard'>
-        </img>
-      </header>
-
-      <section className='section'>
-        <img 
-          src='/banner.png' 
-          alt='Banner de uma mulher segurando o oculops de VR'>
-        </img>
-      </section>
+      <Header />
+      <Banner />
       <EventForm />
 
-      <section>
-        <Theme theme={themes[0]}/>
-      </section>
-      <section>
-        <Theme theme={themes[1]}/>
-      </section>
-      <section>
-        <Theme theme={themes[2]}/>
-      </section>
-      <section>
-        <Theme theme={themes [3]}/>
-      </section>
-      <section>
-        <Theme theme={themes[4]}/>
-      </section>
-      <section>
-        <Theme theme={themes[5]}/>
-      </section>
+      {themes.map(function (item) {
+        return (
+          <section key={item.id}>
+            <Theme theme={item} />
+          </section>
+        )
+      })
+      }
 
     </main>
   )
 }
 
 export default App
- 
